@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+:root {
+    --font-color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 30px;
+    text-decoration: none;
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 150%;
+}
+
+nav li:first-child {
+    margin-right: auto;
+    padding-left: 2%;
+    padding-top: 10px;
+}
+
+nav li:last-child {
+    display: none;
+}
+
+/* MAIN CONTENT HERE */
+main {
+    padding: 50px;
+    margin-top: 100px;
+}
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.card {
+    max-width: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.cardImg {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0px 0px;
+}
+
+h1 {
+    color: var(--font-color);
+    text-align: left;
+}
+p {
+    color: var(--font-color);
+    text-align: left;
+    margin-top: -10px;
+}
+
+@media screen and (max-width: 768px) {
+    nav a {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    main {
+        margin-top: 10px;
+    }
+    .hideOnMobile {
+        display: none;
+    }
+
+    nav li:last-child {
+        display: flex;
+    }
+} 
