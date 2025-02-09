@@ -66,6 +66,14 @@ main {
     gap: 50px;
 }
 
+.cardContainer img {
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+
+.cardContainer img:hover {
+    filter: grayscale(0%);
+}
 
 .sidebar{
     position: fixed;
